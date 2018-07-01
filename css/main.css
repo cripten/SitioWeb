@@ -1,0 +1,84 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+/*menu*/
+.nav-top{background: rgba(42, 83, 173, 0.08);}
+.nav-head{ display: inline;}
+.nav-head li {display: inline; padding:7px; text-align:center; font-size: 14px; background:rgba(242, 210, 34, 1);color:rgba(23, 41, 108, 1);border-radius:1px;}
+.navbar{background: rgba(42, 83, 173, 0.08); }
+.img-logo{
+    margin-top: -3%;
+}
+.navbar-nav{margin-top:16%;} 
+
+/*search*/
+#search{margin-left: -70%; margin-bottom: 6%;}
+#search input{width:500px; background: rgba(42, 83, 173, 0.08); border-top-left-radius: 20px;border-bottom-left-radius:20px; border:2px solid rgba(42, 83, 173, 1);}
+#search button{width:154px; background:rgba(42, 83, 173, 1);border:1px solid rgba(42, 83, 173, 1);}
+
+#shopping{
+    margin-top: 10%;
+    margin-left:12%;
+}
+
+/*comprar producto*/
+.mini{display: block; position:relative;margin-top:1%}
+.card{border:none;}
+.price-card{background: rgba(239, 67, 35, 0.08);color:rgba(239, 67, 35, 1);size:23px;}
+.izq-align{margin-left:20px;}
+.btn{border-radius:20px; background: rgba(239, 67, 35, 1); color:white;}
+.comp-btn{border-radius:20px; background:white; color:black;}
+.izq-align-img{background:white;margin-left:1px;border-radius:20px; border: 1px solid blue;}
+
+.nav-producto{ display: inline;}
+.nav-producto li {display: inline; padding:7px; text-align:center; font-size: 16px;color:rgba(50, 97, 201, 1);border-radius:1px;}
+.des-style{font-size:12px;}
+/*vitrina*/
+.vitri p{font-size:18px; color:rgba(50, 97, 201, 1);}
+/*recomendados*/
+.recom p{font-size:18px; color:rgba(50, 97, 201, 1);}
+.img-style{width:68.57px;height:131.8px;}
+.img-prin{width:165px;height:432px;}
+.img-mini{width:55px;height:51px;}
+.img-new{width:50px;height:50px;}
+.img-car{width:50px;height:50px;}
+/*similares*/
+.sim p{font-size:18px; color:rgba(50, 97, 201, 1);}
+/*container*/
+.container-fluid{width:98%;}
+.block1{border:1px solid blue;}
+.preview-pic {position:flex;}
+.preview-thumbnail {position:flex;display:block;}
+.bajar{margin-top:15px;}
+
+
+/*******BANNER*******/
+.banner-style img{width:420px;height:230px; }
+
+
+/*******FOOTER*********/
+.fot p{font-size:14px; color:rgba(32, 58, 130, 1);}
+.fot li{font-size:12px; color:rgba(32, 58, 130, 1);}
+/*pagos*/
+.pagos-style p{font-size:14px; color:rgba(50, 97, 201, 1);}
+.pagos-style img{margin-left: 4%;}
+/*POLITICAS*/
+
+
+.cust-hr {
+  margin-left: 22px;
+  width: 90%;
+  z-index: 100;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(50, 97, 201, 1);
+}
+.cust-hr-nav {
+  margin-left: 22px;
+  width: 90%;
+  z-index: 100;
+  margin-top: 20%;
+  margin-bottom: 1rem;
+  border-top: 1px solid rgba(239, 67, 35, 1);;
+}

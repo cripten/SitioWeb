@@ -6,12 +6,24 @@ $( document ).ready(function() {
     //recorre los datos del json
     for(datos in mydata){
     	//crea la vitrina de productos
-    	if(i <= 3){
-    		$("#vitrina").append("<div class='col-12 col-md-6 col-lg-4'><div class='card'><img class='card-img-top item' src='img/"+mydata[datos].foto+"' alt='Card image cap'><div class='card-body'><h4 class='card-title'  style='text-align:center;'><a href='product.html' title='View Product'>"+mydata[datos].nombre+"</a></h4><div class='row'><div class='col'><p style='text-align:center;'>$"+mydata[datos].precio+"</p></div><div class='col'><a href='#' class='btn btn-success btn-block'>AGREGAR AL CARRITO</a></div></div></div></div><br><br></div>");
+    	if(i <= 5){
+    		$("#vitrina").append("<div class='col-12 col-md-6 col-lg-2'><div class='card'><img class='card-img-top item img-style mx-auto' src='img/"+mydata[datos].foto+"' alt='Card image cap'><div class='card-body'><h4 class='card-title'><p class='price-card text-right'>$"+mydata[datos].precio+"</p></h4><div class='row'><div class='col'><p'>"+mydata[datos].nombre+"<img class='izq-align' src='img/Group 2493.png'>12</p></div><div class='col'><a href='#' class='btn btn-sm '>COMPRAR</a><button class='izq-align-img'><img src='img/ico-down.png'>1<img src='img/ico-up.png'></button</div></div></div></div><br><br></div>");
     	}
-    	if(i > 3 && i<=6){
-    		$("#recomendados").append("<div class='col-12 col-md-6 col-lg-4'><div class='card'><img class='card-img-top item' src='img/"+mydata[datos].foto+"' alt='Card image cap'><div class='card-body'><h4 class='card-title'  style='text-align:center;'><a href='product.html' title='View Product'>"+mydata[datos].nombre+"</a></h4><div class='row'><div class='col'><p style='text-align:center;'>$"+mydata[datos].precio+"</p></div><div class='col'><a href='#' class='btn btn-success btn-block'>AGREGAR AL CARRITO</a></div></div></div></div><hr class='hr-divi'></div>");
+        if(i == 5){
+            $("#vitrina").append("<div class='col-12 col-md-6 col-lg-1'></div>");
+        }
+    	if(i > 5 && i<=10){
+    		$("#recomendados").append("<div class='col-12 col-md-6 col-lg-2'><div class='card'><img class='card-img-top item img-style mx-auto' src='img/"+mydata[datos].foto+"' alt='Card image cap'><div class='card-body'><h4 class='card-title'><p class='price-card text-right'>$"+mydata[datos].precio+"</p></h4><div class='row'><div class='col'><p'>"+mydata[datos].nombre+"<img class='izq-align' src='img/Group 2493.png'>12</p></div><div class='col'><a href='#' class='btn btn-sm '>COMPRAR</a><button class='izq-align-img'><img src='img/ico-down.png'>1<img src='img/ico-up.png'></button</div></div></div></div><br><br></div>");
     	}
+        if(i == 10){
+            $("#recomendados").append("<div class='col-12 col-md-6 col-lg-1'></div>");
+        }
+        if(i > 10 && i<=14){
+            $("#similares").append("<div class='col-12 col-md-6 col-lg-2'><div class='card'><img class='card-img-top item img-style mx-auto' src='img/"+mydata[datos].foto+"' alt='Card image cap'><div class='card-body'><h4 class='card-title'><p class='price-card text-right'>$"+mydata[datos].precio+"</p></h4><div class='row'><div class='col'><p'>"+mydata[datos].nombre+"<img class='izq-align' src='img/Group 2493.png'>12</p></div><div class='col'><a href='#' class='btn btn-sm '>COMPRAR</a><button class='izq-align-img'><img src='img/ico-down.png'>1<img src='img/ico-up.png'></button</div></div></div></div><br><br></div>");
+        }
+        if(i == 14){
+            $("#similares").append("<div class='col-12 col-md-6 col-lg-1'></div>");
+        }
     	i++;
 	}
 	 

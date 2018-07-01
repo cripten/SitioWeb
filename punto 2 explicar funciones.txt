@@ -1,0 +1,26 @@
+adjustText:function(input) esta funcion permite sacar el contenido de un label y ajustarlo para luego agregarlo al final de un input
+{
+	var label=input.parent(),
+	text=label.text();
+	qtt="";
+
+	text=fns.removeCounter(text);
+
+	label.text(text).prepend(input);
+},
+
+removeCounter:function(text)//remplaza el actual contenido por uno nuevo
+{
+	return text.replace(/\([0-9]+\)/ig,function(a){
+	   qtt=a.replace(/\(|\)/,"");
+		return "";
+	});
+},
+
+filterAjaxError:function()//ocurre cuando hay un erro en el programa y envia un mensaje de error
+{
+	prodOverlay.fadeTo(300,0,function(){jQuery(this).hide();});
+	prodOverlay1.fadeTo(300,0,function(){jQuery(this).hide();});
+	//alert(options.filterErrorMsg);
+	log("Houve um erro ao tentar fazer a requisição da página com filtros.");
+},
